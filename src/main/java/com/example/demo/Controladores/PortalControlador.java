@@ -84,6 +84,7 @@ public class PortalControlador {
 
     @GetMapping("autor_alta")
     public String altaAutor(String id, ModelMap modelo) throws ErroresServicio {
+        System.out.println(id);
         try {
             AutorServicio.habilitarAutor(id);
         } catch (ErroresServicio ex) {
